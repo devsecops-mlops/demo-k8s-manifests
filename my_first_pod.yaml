@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-first-pod
+  labels:
+    app: todo-app
+spec:
+  containers:
+    - name: my-first-pod
+      image: iamarund/todoui:v1
+      ports:
+      - containerPort: 80
+
+
